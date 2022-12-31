@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <%- include('partials/head', {title: 'Inicio'}) %>
-  <body>
+  <body style="background-color:<%= locals.bgColor ? locals.bgColor : null %>">
     <h1></h1>
     <p></p>
 
@@ -31,12 +31,19 @@
       <div class="form-group">
         <select class="form-control" id="exampleFormControlSelect1" name="color">          
           <option value="<%= locals.old && old.color ? old.color : null %>"><%= locals.old && old.color ? old.color : "Elige un color" %></option>
-          <option value="blue">Pink</option>
-          <option value="Red">Red</option>
-          <option value="purple">Purple</option>
-          <option value="green">Green</option>
+          <option value="IndianRed">IndianRed</option>
           <option value="LightSalmon">LightSalmon</option>
-          <option value="DarkSalmon">DarkSalmon</option>
+          <option value="DarkRed">DarkRed</option>
+          <option value="LightPink">LightPink</option>
+          <option value="OrangeRed">OrangeRed</option>
+          <option value="Tomato">Tomato</option>
+          <option value="Gold">Gold</option>
+          <option value="MediumPurple">MediumPurple</option>
+          <option value="SlateBlue">SlateBlue</option>
+          <option value="SeaGreen">SeaGreen</option>
+          <option value="PowderBlue">PowderBlue</option>
+          <option value="CornflowerBlue">CornflowerBlue</option>
+          <option value="LightGray">LightGray</option>
         </select>
         <span class="text-danger small"><%= locals.errors && errors.color ? errors.color.msg : null %></span>
       </div>

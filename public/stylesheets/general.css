@@ -2,6 +2,7 @@
 
 body {
     margin: 0;
+    padding: 10rem;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -62,4 +63,8 @@ a {
     text-decoration: none;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
+}
+
+select {
+    border: none;
 }

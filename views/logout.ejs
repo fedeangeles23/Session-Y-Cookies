@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
-  <%- include('partials/head', {title: 'Inicio'}) %>
-<body style="background-color:<%= locals.bgColor ? locals.bgColor : null %>">
+<%- include('partials/head', {title: 'Cierre de sesión' }) %>
+
+  <body style="background-color:<%= locals.bgColor ? locals.bgColor : null %>">
     <div class='container'>
-        <div class="col-lg-6">
-          <fieldset class="border" >
-            <legend class ='text-center'></legend>     
-     
-              <h2 id="innerPara">
-                Gracias, vuelvan pronto!!!
-              </h2>
-      </fieldset>
+      <div class="col-lg-6">
+        <div class="come-back-soon">
+          <legend class='text-center'></legend>
+
+          <h2 id="innerPara">
+            Gracias, vuelva pronto!
+          </h2>
+          <a class="back" href="/"
+            style="background-color: #fd7014; color: white; padding: 10px 30px; margin:20px; border-radius: 10px; text-decoration:none">Volver</a>
+        </div>
       </div>
 
-      
-      <a href="/" style="background-color: #fd2714; color: white; padding: 10px 30px; margin:20px; border-radius: 10px; text-decoration:none">Volver</a>
-</body>
+
+  </body>
+
 </html>
